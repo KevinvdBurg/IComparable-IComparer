@@ -131,6 +131,7 @@
             // rbName
             // 
             this.rbName.AutoSize = true;
+            this.rbName.Checked = true;
             this.rbName.Location = new System.Drawing.Point(18, 29);
             this.rbName.Name = "rbName";
             this.rbName.Size = new System.Drawing.Size(53, 17);
@@ -147,7 +148,6 @@
             this.rbAddress.Name = "rbAddress";
             this.rbAddress.Size = new System.Drawing.Size(63, 17);
             this.rbAddress.TabIndex = 9;
-            this.rbAddress.TabStop = true;
             this.rbAddress.Text = "Address";
             this.rbAddress.UseVisualStyleBackColor = true;
             this.rbAddress.CheckedChanged += new System.EventHandler(this.rbAddress_CheckedChanged);
@@ -159,7 +159,6 @@
             this.rbNumber.Name = "rbNumber";
             this.rbNumber.Size = new System.Drawing.Size(62, 17);
             this.rbNumber.TabIndex = 10;
-            this.rbNumber.TabStop = true;
             this.rbNumber.Text = "Number";
             this.rbNumber.UseVisualStyleBackColor = true;
             this.rbNumber.CheckedChanged += new System.EventHandler(this.rbNumber_CheckedChanged);
