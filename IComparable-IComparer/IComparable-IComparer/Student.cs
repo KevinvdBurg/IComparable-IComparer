@@ -6,7 +6,7 @@ using System.Text;
 
 namespace IComparable_IComparer
 {
-    public class Student
+    public class Student : IComparable<Student>
     {
         public Student(string name, string address, int number)
         {
@@ -44,6 +44,11 @@ namespace IComparable_IComparer
             set
             {
             }
+        }
+
+        public int CompareTo(Student other)
+        {
+            throw new NotImplementedException();
         }
 
         public string ToString()
