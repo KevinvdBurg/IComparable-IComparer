@@ -10,50 +10,25 @@ namespace IComparable_IComparer
     {
         public Student(string name, string address, int number)
         {
-            throw new System.NotImplementedException();
+            Name = name;
+            Address = address;
+            Number = number;
         }
     
-        public string Name
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        public string Name {get; set; }
 
-        public string Address
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        public string Address { get; set; }
 
-        public int Number
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        public int Number { get; set; }
 
         public int CompareTo(Student other)
         {
-            throw new NotImplementedException();
+            return this.Name.CompareTo(other.Name);
         }
 
         public string ToString()
         {
-            throw new System.NotImplementedException();
+            return "Name: " + Name + ", Address: " + Address + ", Number: " + Number + "";
         }
     }
 }
